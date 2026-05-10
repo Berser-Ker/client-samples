@@ -113,7 +113,7 @@ section { padding: 140px 0; position: relative; }
 .page-hero h1 { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(3rem, 9vw, 8rem); line-height: 0.95; letter-spacing: -0.03em; max-width: 900px; }
 .page-hero h1 i { font-style: italic; color: var(--ember); }
 .page-hero-lead { color: var(--muted); font-size: 1.1rem; max-width: 540px; line-height: 1.65; margin-top: 28px; }
-.page-hero-img { position: absolute; right: 0; top: 0; bottom: 0; width: 34%; background-size: cover; background-position: center; -webkit-mask-image: radial-gradient(ellipse 130% 160% at 95% 100%, black 20%, transparent 65%); mask-image: radial-gradient(ellipse 130% 160% at 95% 100%, black 20%, transparent 65%); z-index: 0; }
+.page-hero-img { position: absolute; right: 0; top: 0; bottom: 0; width: 34%; background-size: cover; background-position: center; -webkit-mask-image: radial-gradient(ellipse 130% 160% at 115% 120%, black 20%, transparent 65%); mask-image: radial-gradient(ellipse 130% 160% at 115% 120%, black 20%, transparent 65%); z-index: 0; }
 @media (max-width: 920px) { .page-hero-img { display: none; } }
 
 /* Marquee */
