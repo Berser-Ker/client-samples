@@ -109,9 +109,12 @@ section { padding: 140px 0; position: relative; }
 /* Page hero (inner pages) */
 .page-hero { padding: 200px 0 100px; position: relative; overflow: hidden; }
 .page-hero::before { content:''; position: absolute; inset: 0; background: radial-gradient(1000px 500px at 75% 0%, rgba(255,90,31,0.15), transparent 60%); pointer-events: none; }
+.page-hero .container { position: relative; z-index: 1; }
 .page-hero h1 { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(3rem, 9vw, 8rem); line-height: 0.95; letter-spacing: -0.03em; max-width: 900px; }
 .page-hero h1 i { font-style: italic; color: var(--ember); }
 .page-hero-lead { color: var(--muted); font-size: 1.1rem; max-width: 540px; line-height: 1.65; margin-top: 28px; }
+.page-hero-img { position: absolute; right: 0; top: 0; bottom: 0; width: 34%; background-size: cover; background-position: center; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%); mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%); z-index: 0; }
+@media (max-width: 920px) { .page-hero-img { display: none; } }
 
 /* Marquee */
 .marquee { overflow: hidden; padding: 28px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); background: var(--cream); position: relative; }
