@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meridian Advisory</title>
+  <title>Legal Advisory</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --paper:    #F2EFE8;
-      --cream:    #FBFAF6;
-      --ink:      #0A0A0A;
-      --slate:    #18181A;
-      --slate-2:  #2A2A2D;
-      --line:     #1F1F22;
-      --hairline: rgba(10,10,10,0.10);
+      --paper:    #F0EFF0;
+      --cream:    #F8F8F6;
+      --ink:      #0D1B2A;
+      --slate:    #162336;
+      --slate-2:  #1F3048;
+      --line:     #1A2E40;
+      --hairline: rgba(13,27,42,0.10);
       --hairline-light: rgba(255,255,255,0.10);
-      --muted:    #6B6B70;
-      --muted-2:  #95959B;
-      --ember:    #FF5A1F;
-      --ember-2:  #E94B16;
+      --muted:    #5B6878;
+      --muted-2:  #8896A8;
+      --ember:    #B8963E;
+      --ember-2:  #9E7D2E;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,7 +40,7 @@
     .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
 
     /* Spotlight cursor */
-    #spot { position: fixed; pointer-events: none; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(255,90,31,0.10) 0%, transparent 60%); transform: translate(-50%, -50%); z-index: 1; transition: opacity 0.4s; opacity: 0; mix-blend-mode: multiply; }
+    #spot { position: fixed; pointer-events: none; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,62,0.10) 0%, transparent 60%); transform: translate(-50%, -50%); z-index: 1; transition: opacity 0.4s; opacity: 0; mix-blend-mode: multiply; }
     @media (hover: hover) { #spot.on { opacity: 1; } }
 
     /* Scroll progress */
@@ -67,7 +67,7 @@
       border-bottom: 1px solid transparent;
     }
     nav.top.scrolled {
-      background: rgba(242,239,232,0.78);
+      background: rgba(240,239,240,0.92);
       backdrop-filter: blur(18px) saturate(140%);
       -webkit-backdrop-filter: blur(18px) saturate(140%);
       border-bottom-color: var(--hairline);
@@ -75,7 +75,7 @@
     }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; }
     .logo { font-family: 'Instrument Serif', Georgia, serif; font-size: 1.5rem; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 8px; }
-    .logo-mark { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, var(--ember), #C03A0E); display: inline-block; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15); }
+    .logo-mark { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, var(--ember), #7A6128); display: inline-block; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15); }
     .logo i { font-style: italic; opacity: 0.7; }
     .nav-links { display: flex; align-items: center; gap: 28px; }
     .nl { font-size: 0.875rem; color: var(--ink); opacity: 0.7; transition: opacity 0.2s; position: relative; }
@@ -93,7 +93,7 @@
       will-change: transform;
     }
     .btn-ink   { background: var(--ink); color: var(--cream); }
-    .btn-ink:hover  { background: var(--ember); color: var(--ink); transform: translateY(-2px); box-shadow: 0 18px 38px rgba(255,90,31,0.32); }
+    .btn-ink:hover  { background: var(--ember); color: var(--cream); transform: translateY(-2px); box-shadow: 0 18px 38px rgba(184,150,62,0.28); }
     .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
     .btn-ghost:hover { background: var(--ink); color: var(--cream); transform: translateY(-2px); }
     .btn-cream { background: var(--cream); color: var(--ink); }
@@ -121,8 +121,8 @@
     .hero::before {
       content: ''; position: absolute; inset: 0;
       background:
-        radial-gradient(1200px 600px at 80% 10%, rgba(255,90,31,0.18), transparent 60%),
-        radial-gradient(900px 500px at 10% 90%, rgba(10,10,10,0.06), transparent 70%);
+        radial-gradient(1200px 600px at 80% 10%, rgba(184,150,62,0.12), transparent 60%),
+        radial-gradient(900px 500px at 10% 90%, rgba(13,27,42,0.06), transparent 70%);
       pointer-events: none;
     }
     .hero-grid { display: grid; grid-template-columns: 1fr; gap: 56px; align-items: end; position: relative; }
@@ -183,7 +183,7 @@
     }
     .stats::before {
       content:''; position:absolute; inset:0;
-      background: radial-gradient(800px 400px at 70% 50%, rgba(255,90,31,0.18), transparent 60%);
+      background: radial-gradient(800px 400px at 70% 50%, rgba(184,150,62,0.14), transparent 60%);
     }
     .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 64px; position: relative; }
     .stat-num { font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(3.5rem, 7vw, 6rem); line-height: 1; letter-spacing: -0.035em; }
@@ -261,7 +261,7 @@
     .sb-ig { background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); color:#fff; }
     .sb-x  { background:#0F1419; color:#fff; }
     .ig-square { aspect-ratio: 1/1; background: var(--ink); display: flex; align-items: center; justify-content: center; padding: 32px; position: relative; overflow: hidden; }
-    .ig-square::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 30% 20%, rgba(255,90,31,0.25), transparent 60%); }
+    .ig-square::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 30% 20%, rgba(184,150,62,0.22), transparent 60%); }
     .ig-square .iq { font-family: 'Instrument Serif', Georgia, serif; color: var(--cream); font-size: 1.7rem; line-height: 1.2; max-width: 22ch; text-align: center; position: relative; z-index: 1; letter-spacing: -0.01em; }
     .ig-square .iq i { color: var(--ember); font-style: italic; }
     .ig-square .it { color: var(--ember); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; text-align: center; position: relative; z-index: 1; }
@@ -284,7 +284,7 @@
       background: var(--ink); color: var(--cream); position: relative; overflow: hidden;
       padding: 180px 0;
     }
-    .cta::before { content:''; position:absolute; inset:0; background: radial-gradient(900px 500px at 50% 50%, rgba(255,90,31,0.22), transparent 60%); }
+    .cta::before { content:''; position:absolute; inset:0; background: radial-gradient(900px 500px at 50% 50%, rgba(184,150,62,0.18), transparent 60%); }
     .cta-inner { text-align: center; position: relative; }
     .cta h2 { font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: -0.03em; margin-bottom: 32px; }
     .cta h2 i { color: var(--ember); font-style: italic; }
@@ -328,7 +328,7 @@
   <!-- NAV -->
   <nav class="top">
     <div class="container nav-inner">
-      <a href="#" class="logo"><span class="logo-mark"></span>Meridian <i>Advisory</i></a>
+      <a href="#" class="logo"><span class="logo-mark"></span>Legal <i>Advisory</i></a>
       <div class="nav-links">
         <a href="#about"    class="nl">About</a>
         <a href="#services" class="nl">Services</a>
@@ -420,7 +420,7 @@
           <h2 class="serif" style="font-size:clamp(2.25rem,4vw,3.5rem); line-height:1; letter-spacing:-0.025em; margin: 16px 0 28px;">
             A different kind<br>of <i style="color:var(--ember);">advisory firm.</i>
           </h2>
-          <p>Meridian was founded on the belief that real advisory means getting in the trenches. We do not hand you a report and walk away. We stay engaged until strategy becomes execution.</p>
+          <p>Legal Advisory was founded on the belief that real advisory means getting in the trenches. We do not hand you a report and walk away. We stay engaged until strategy becomes execution.</p>
           <p>Our team blends finance, operations, and technology expertise to give founders and operators a complete picture: from market entry to exit readiness.</p>
           <a href="#contact" class="btn btn-ink" style="margin-top:24px;">Meet the Team <span class="btn-arrow">&rarr;</span></a>
         </div>
@@ -545,9 +545,9 @@
         <!-- LinkedIn -->
         <div class="scard fade">
           <div class="shead">
-            <div class="savatar">M</div>
+            <div class="savatar">L</div>
             <div style="flex:1; min-width:0;">
-              <div class="sname">Meridian Advisory</div>
+              <div class="sname">Legal Advisory</div>
               <div class="smeta">2,184 followers</div>
               <div class="smeta">3d &middot; Edited</div>
             </div>
@@ -571,9 +571,9 @@
         <!-- Instagram -->
         <div class="scard fade d2">
           <div class="shead">
-            <div class="savatar ig">M</div>
+            <div class="savatar ig">L</div>
             <div style="flex:1; min-width:0;">
-              <div class="sname">meridian.advisory</div>
+              <div class="sname">legal.advisory</div>
               <div class="smeta">New York &middot; Sponsored</div>
             </div>
             <span class="sbadge sb-ig">IG</span>
@@ -588,18 +588,18 @@
             <span>&#9825;</span><span>&#128172;</span><span>&#10148;</span>
             <span style="margin-left:auto;">874 likes</span>
           </div>
-          <div style="padding:0 20px 18px; font-size:0.78rem; color:var(--muted);"><span style="color:var(--ink); font-weight:600;">meridian.advisory</span> Read the full piece. Link in bio.</div>
+          <div style="padding:0 20px 18px; font-size:0.78rem; color:var(--muted);"><span style="color:var(--ink); font-weight:600;">legal.advisory</span> Read the full piece. Link in bio.</div>
         </div>
 
         <!-- X -->
         <div class="scard fade d4">
           <div class="shead" style="align-items:flex-start;">
-            <div class="savatar">M</div>
+            <div class="savatar">L</div>
             <div style="flex:1; min-width:0;">
               <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-                <span class="sname">Meridian Advisory</span>
+                <span class="sname">Legal Advisory</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#1d9bf0"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.146 2.018-2.146 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg>
-                <span class="smeta">@meridianadv &middot; 7h</span>
+                <span class="smeta">@legaladv &middot; 7h</span>
               </div>
               <div style="margin-top:6px; color:var(--ink); font-size:0.95rem; line-height:1.6;">
                 Most "operational issues" are decision-rights issues in disguise.<br><br>
@@ -669,7 +669,7 @@
       <h2 class="fade d1">Ready to build<br>something <i>lasting?</i></h2>
       <p class="fade d2">Every engagement starts with a no-commitment conversation. Tell us where you are and where you want to go.</p>
       <div class="fade d3" style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
-        <a href="mailto:hello@meridian.co" class="btn btn-cream">Get in Touch <span class="btn-arrow">&rarr;</span></a>
+        <a href="mailto:hello@legal.co" class="btn btn-cream">Get in Touch <span class="btn-arrow">&rarr;</span></a>
         <a href="#services" class="btn" style="border:1px solid rgba(255,255,255,0.3); color:var(--cream);">View Services</a>
       </div>
     </div>
@@ -678,7 +678,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="container foot-inner">
-      <a href="#" class="logo" style="color:var(--cream);"><span class="logo-mark"></span>Meridian <i>Advisory</i></a>
+      <a href="#" class="logo" style="color:var(--cream);"><span class="logo-mark"></span>Legal <i>Advisory</i></a>
       <div class="foot-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -686,7 +686,7 @@
         <a href="#team">Team</a>
         <a href="#contact">Contact</a>
       </div>
-      <p class="foot-copy">2026 Meridian Advisory. All rights reserved.</p>
+      <p class="foot-copy">2026 Legal Advisory. All rights reserved.</p>
     </div>
   </footer>
 
