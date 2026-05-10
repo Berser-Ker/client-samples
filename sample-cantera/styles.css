@@ -46,6 +46,10 @@ a { color: inherit; text-decoration: none; }
 /* Nav */
 nav.top { position: fixed; inset: 0 0 auto 0; z-index: 100; padding: 18px 0; transition: background 0.4s, backdrop-filter 0.4s, padding 0.4s, border-color 0.4s; border-bottom: 1px solid transparent; }
 nav.top.scrolled, nav.top.solid { background: rgba(242,239,232,0.85); backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%); border-bottom-color: var(--hairline); padding: 12px 0; }
+nav.top:not(.scrolled):not(.solid) .nl { color: var(--cream); }
+nav.top:not(.scrolled):not(.solid) .nl::after { background: var(--cream); }
+nav.top:not(.scrolled):not(.solid) .logo { color: var(--cream); }
+nav.top:not(.scrolled):not(.solid) .mob-btn { color: var(--cream); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; }
 .logo { font-family: 'Instrument Serif', Georgia, serif; font-size: 1.5rem; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
 .logo-mark { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, var(--ember), #C03A0E); display: inline-block; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15); }
