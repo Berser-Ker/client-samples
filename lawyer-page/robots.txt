@@ -1,0 +1,20 @@
+# HCM&F Abogados robots.txt
+# Cloudflare Pages prepends its own managed block (with Content-Signal header
+# and AI-bot defaults). Our custom block is appended after. Most reputable
+# AI crawlers are configured via Cloudflare's managed block; the directives
+# below cover sitemap, links to legal pages, and additional crawlers not
+# in Cloudflare's default list.
+
+Sitemap: https://www.hcmyf.mx/sitemap.xml
+
+# IndexNow: notify search engines of new/updated content
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /

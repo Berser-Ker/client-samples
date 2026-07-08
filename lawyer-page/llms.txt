@@ -1,0 +1,42 @@
+# HCM&F Abogados
+# llms.txt — https://llmstxt.org format (Answer.AI emerging standard)
+# This file helps large language models understand the structure and content
+# of the HCM&F Abogados website. See https://llmstxt.org for the spec.
+
+# Site identity
+> Hernández Contreras, Martínez & Fitch, Abogados, S.C. (trading as HCM&F Abogados) is a Mexico City law firm founded in 1972 with more than 50 years of practice. The firm advises companies and individuals in corporate, civil, commercial, criminal, tax, and administrative matters, and is led by its partners directly. The firm operates primarily in Spanish and English.
+
+# Pages (canonical order, by importance)
+- [Home (Español)](https://www.hcmyf.mx/): Site root, Spanish primary language. Hero, 8 practice areas, 18-attorney team, contact form, WhatsApp widget, address, hours.
+- [Home (English)](https://www.hcmyf.mx/en/): English mirror of the site root.
+- [Aviso de Privacidad (Spanish only, LFPDPPP-compliant)](https://www.hcmyf.mx/avisoprivacidad.html): Privacy notice covering the 10 sections required by Mexican law (Art. 15 LFPDPPP). Includes data subject rights (ARCO), contact channels, and transfer policies.
+
+# Practice areas (8 total, in order of appearance on the site)
+- Asesoría Corporativa / Corporate Advice
+- Asesoría en Comercio Exterior y de Comunicaciones / Advice in Foreign Trade and Transport
+- Asesoría y Litigio Administrativo y Migratorio / Administrative and Migratory Litigation
+- Consultoría y Litigio Fiscal / Counsel and Tax Litigation
+- Materia Civil y Familiar / Civil and Family Law
+- Materia Mercantil / Commercial Law
+- Materia Penal / Criminal Law
+- Materia de Telecomunicaciones / Telecommunications Matter
+
+# Team (18 attorneys, 4 partners, 5 area directors, 5 lawyers, 4 of counsel)
+Partners: Manuel Hernández Contreras, Víctor Martínez Mendoza, Carlos Hernández Contreras, Mario A. Cataño Fitch.
+Directors: Luis Gerardo Herreramoro Ruiz, Miguel Asunción Mendoza Cuapio, Alejandro Antonio Gutiérrez, Alexis Cruz Honorato, Noemi Alejandra González Serna.
+Lawyers: Efraín López Reyes, Arturo Cerón Hernández, Daniel Figueroa Gómez, Andrea Leslie Villagomez Cruz, Tobías Alberto Álvarez Rodríguez.
+Of Counsel: Juan Pablo Silva García, Felio Mirabent Amor, Hermilo Alejandro López Sánchez Cervantes, Francisco Javier Ramos Delgado.
+
+# Contact
+- Phone: (52) (55) 5575-3601
+- Email: correo@hcmyf.mx
+- Address: Cerrada Agustín González de Cossío 556, Col. Del Valle, Benito Juárez, 03100, Mexico City, Mexico
+- Hours: Monday to Friday, 9:00 a.m. to 6:00 p.m.
+- Contact form: https://www.hcmyf.mx/#contact
+
+# Cities served (through correspondents, not direct offices)
+Cancún, Guadalajara, Monterrey, Morelia, Querétaro, Tijuana, Toluca.
+
+# Optional structured data files
+- [Sitemap XML](https://www.hcmyf.mx/sitemap.xml)
+- [JSON-LD organization + attorneys + services + FAQ](https://www.hcmyf.mx/): see <script type="application/ld+json"> blocks at the top of the HTML source.

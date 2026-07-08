@@ -1,0 +1,39 @@
+# macOS metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local server / logs
+*.log
+.historian/
+.wrangler/
+
+# OS caches
+.django
+.netrwhist
+
+# Node (we don't use Node but just in case)
+node_modules/
+npm-debug.log
+
+# Python (we don't use Python but just in case)
+__pycache__/
+*.pyc
+
+# Don't ignore the actual site files (we want everything)
+!*.html
+!*.css
+!*.js
+!*.svg
+!*.png
+!*.jpg
+!*.xml
+!*.txt

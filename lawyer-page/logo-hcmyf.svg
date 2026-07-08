@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" role="img" aria-label="HCM&amp;F">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C0973F"/>
+      <stop offset="1" stop-color="#6E5118"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="56" height="56" rx="8" fill="#0F0C09"/>
+  <rect x="4" y="8" width="48" height="48" rx="6" fill="url(#g)"/>
+  <text x="28" y="42" font-family="Georgia, 'Cormorant Garamond', serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0F0C09">HC</text>
+  <text x="68" y="40" font-family="Cormorant Garamond, Georgia, serif" font-size="28" font-weight="500" letter-spacing="0.5" fill="#C0973F">HCM&amp;F</text>
+  <text x="68" y="56" font-family="Outfit, system-ui, sans-serif" font-size="9" font-weight="400" letter-spacing="2.5" fill="#8A703E">ABOGADOS</text>
+</svg>

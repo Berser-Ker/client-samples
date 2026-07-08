@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="HCM&amp;F">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF7"/>
+      <stop offset="1" stop-color="#F5EFE3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C0973F"/>
+      <stop offset="1" stop-color="#6E5118"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gold corner accents -->
+  <line x1="80" y1="80" x2="160" y2="80" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="80" y1="80" x2="80" y2="160" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="1120" y1="550" x2="1040" y2="550" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="1120" y1="550" x2="1120" y2="470" stroke="url(#gold)" stroke-width="2"/>
+
+  <!-- Center monogram block -->
+  <g transform="translate(600,260)">
+    <rect x="-90" y="-90" width="180" height="180" rx="20" fill="#0F0C09"/>
+    <rect x="-78" y="-78" width="156" height="156" rx="14" fill="url(#gold)"/>
+    <text x="0" y="38" font-family="Georgia, 'Cormorant Garamond', serif" font-size="100" font-weight="600" text-anchor="middle" fill="#0F0C09">HC</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="540" y1="430" x2="660" y2="430" stroke="url(#gold)" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="600" y="490" font-family="Cormorant Garamond, Georgia, serif" font-size="56" font-weight="500" text-anchor="middle" fill="#1A1613">HCM&amp;F <tspan font-style="italic" fill="#A57C2A">Abogados</tspan></text>
+
+  <!-- Subtitle -->
+  <text x="600" y="540" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-style="italic" text-anchor="middle" fill="#5A4D3E">Hernández Contreras, Martínez &amp; Fitch</text>
+
+  <!-- Tagline -->
+  <text x="600" y="585" font-family="Outfit, system-ui, sans-serif" font-size="14" font-weight="500" letter-spacing="3" text-anchor="middle" fill="#A57C2A">MEXICO CITY · SINCE 1972</text>
+</svg>
